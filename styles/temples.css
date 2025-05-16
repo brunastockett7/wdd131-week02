@@ -1,29 +1,103 @@
+/* temples.css - Mobile First Styles */
+
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #fdf6f0;
-  color: #3e2723;
+  background-color: #fceef1; /* soft pastel pink */
+  color: #3e2723; /* deep neutral brown */
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 header {
-  background: #dba39a; /* dusty rose */
+  background-color: #e8b4b8; /* warm muted rose */
   color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+#menu-button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin-top: 0.5rem;
 }
 
 nav {
-  background: #fef3c7; /* pale yellow */
+  background-color: #f8e1e7; /* light neutral pink */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5c3b30; /* warm brown */
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
 
 nav a:hover {
-  background: #fcd34d; /* muted yellow */
+  background-color: #f5c6d0; /* muted blush */
   color: #3e2723;
+}
+
+main h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #3e2723;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 
 figure {
-  background: white;
-  border: 2px solid #f8d4d0; /* blush rose */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+figure:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #f4c2c2;
+}
+
+figcaption {
+  padding: 1rem;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #3e2723;
+  font-size: 1rem;
 }
 
 footer {
-  background: #e8e3da; /* light taupe */
+  background-color: #f9e7ec; /* light taupe pink */
+  text-align: center;
+  padding: 1.5rem;
   color: #3e2723;
+  font-size: 0.9rem;
 }

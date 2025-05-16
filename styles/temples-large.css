@@ -1,60 +1,95 @@
-
-/* Large screen styles (768px and up) */
-@media screen and (min-width: 768px) {
-
-  /* Show full nav menu in row */
-  nav {
-    display: flex !important;
-    justify-content: center;
-    flex-direction: row;
-    background-color: #fef3c7; /* pale yellow */
-  }
-
-  nav a {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-  }
-
-  #menu-button {
-    display: none; /* hide hamburger on large screens */
-  }
-
-  /* Grid: display multiple columns */
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 1.5rem;
-    padding: 2rem;
-  }
-
-  figure {
-    border: 2px solid #f8d4d0; /* blush pink */
-    border-radius: 1rem;
-    overflow: hidden;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-  }
-
-  figure:hover {
-    transform: scale(1.02);
-  }
-
-  figure img {
-    height: 200px;
-    object-fit: cover;
-  }
-
-  figcaption {
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    padding: 0.75rem;
-    color: #3e2723;
-  }
-
-  footer {
-    padding: 1.5rem;
-    font-size: 1rem;
-  }
+/* Google Fonts already linked in HTML */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fceef1; /* soft pastel pink */
+  color: #3e2723; /* deep neutral brown */
+  margin: 0;
+  padding: 0;
 }
+
+/* Header Styles */
+header {
+  background-color: #e8b4b8; /* warm muted rose */
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* Mobile Nav Menu */
+nav {
+  background-color: #f8e1e7; /* light neutral pink */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3e2723;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #f5c6d0; /* muted blush */
+  color: #3e2723;
+}
+
+/* Mobile Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Figure/Image Styles */
+figure {
+  background-color: white;
+  border: 1px solid #f4c2c2; /* rose pink border */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #f4c2c2;
+}
+
+figcaption {
+  padding: 0.8rem;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #3e2723;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  background-color: #f9e7ec; /* light taupe pink */
+  text-align: center;
+  padding: 1.5rem;
+  color: #3e2723;
+  font-size: 0.9rem;
+}
+
+/* Hamburger Menu Button */
+#menu-button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
