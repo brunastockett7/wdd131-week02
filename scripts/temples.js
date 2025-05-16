@@ -1,16 +1,36 @@
-
 // ========== HAMBURGER MENU ==========
 const menuButton = document.getElementById('menu-button');
 const navMenu = document.getElementById('nav-menu');
 
-menuButton.addEventListener('click', () => {
-  const isOpen = navMenu.style.display === 'flex';
-  navMenu.style.display = isOpen ? 'none' : 'flex';
-  menuButton.innerHTML = isOpen ? '&#9776;' : '✖';
-});
+if (menuButton && navMenu) {
+  menuButton.addEventListener('click', () => {
+    const isOpen = navMenu.style.display === 'flex';
+    navMenu.style.display = isOpen ? 'none' : 'flex';
+    menuButton.innerHTML = isOpen ? '&#9776;' : '✖';
+  });
+}
 
 // ========== FOOTER: YEAR & LAST MODIFIED ==========
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearSpan = document.getElementById('year');
+const lastModifiedSpan = document.getElementById('last-modified');
 
-const lastModified = document.lastModified;
-document.getElementById('last-modified').textContent = lastModified;
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
+
+if (lastModifiedSpan) {
+  lastModifiedSpan.textContent = document.lastModified;
+}
+
+// ========== INTERACTIVE TEMPLE DETAILS ==========
+function showDetails(title, description) {
+  const titleElement = document.getElementById('temple-title');
+  const descElement = document.getElementById('temple-description');
+  const detailsSection = document.getElementById('photo-details');
+
+  if (titleElement && descElement && detailsSection) {
+    titleElement.textContent = title;
+    descElement.textContent = description;
+    detailsSection.classList.remove('hidden');
+  }
+}
