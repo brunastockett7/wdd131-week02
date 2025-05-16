@@ -1,95 +1,34 @@
-/* Google Fonts already linked in HTML */
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #fceef1; /* soft pastel pink */
-  color: #3e2723; /* deep neutral brown */
-  margin: 0;
-  padding: 0;
-}
+/* temples-large.css */
+@media screen and (min-width: 768px) {
+  /* Make nav horizontal */
+  nav {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-/* Header Styles */
-header {
-  background-color: #e8b4b8; /* warm muted rose */
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
-}
+  /* Hide hamburger menu */
+  #menu-button {
+    display: none;
+  }
 
-/* Mobile Nav Menu */
-nav {
-  background-color: #f8e1e7; /* light neutral pink */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem;
-}
+  /* Desktop Grid: 2–3 columns */
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 2rem;
+  }
 
-nav a {
-  text-decoration: none;
-  color: #3e2723;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
+  /* Resize image smaller */
+  figure img {
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
 
-nav a:hover {
-  background-color: #f5c6d0; /* muted blush */
-  color: #3e2723;
+  figcaption {
+    font-size: 1rem;
+    padding: 1rem;
+  }
 }
-
-/* Mobile Grid Layout */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-/* Figure/Image Styles */
-figure {
-  background-color: white;
-  border: 1px solid #f4c2c2; /* rose pink border */
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  overflow: hidden;
-  transition: transform 0.2s ease;
-}
-
-figure img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-bottom: 1px solid #f4c2c2;
-}
-
-figcaption {
-  padding: 0.8rem;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  color: #3e2723;
-  font-size: 0.95rem;
-}
-
-/* Footer */
-footer {
-  background-color: #f9e7ec; /* light taupe pink */
-  text-align: center;
-  padding: 1.5rem;
-  color: #3e2723;
-  font-size: 0.9rem;
-}
-
-/* Hamburger Menu Button */
-#menu-button {
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  margin-top: 0.5rem;
-}
-

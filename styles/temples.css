@@ -72,6 +72,7 @@ figure {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
 }
 
 figure:hover {
@@ -81,8 +82,10 @@ figure:hover {
 
 figure img {
   width: 100%;
+  max-width: 600px;
   height: auto;
   display: block;
+  margin: 0 auto;
   border-bottom: 1px solid #f4c2c2;
 }
 
