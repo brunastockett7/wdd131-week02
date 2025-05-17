@@ -34,3 +34,14 @@ function showDetails(title, description) {
     detailsSection.classList.remove('hidden');
   }
 }
+
+// ========== CLOSE DETAILS WHEN CLICKING OUTSIDE ==========
+document.addEventListener('click', (e) => {
+  const details = document.getElementById('photo-details');
+  const isInsideFigure = e.target.closest('figure');
+  const isInsideDetails = e.target.closest('#photo-details');
+
+  if (details && !isInsideFigure && !isInsideDetails) {
+    details.classList.add('hidden');
+  }
+});

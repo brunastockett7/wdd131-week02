@@ -3,53 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Temple Photo Album by Bruna Stockett" />
+  <meta name="author" content="Bruna Stockett" />
   <title>Temple Photo Album</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/temples.css" />
-  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)" />
+  <link rel="stylesheet" href="styles/temples-large.css" />
   <script src="scripts/temples.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Temple Photo Album</h1>
-    <button id="menu-button" aria-label="Menu">&#9776;</button>
+    <button id="menu-button">&#9776;</button>
     <nav id="nav-menu">
       <a href="#intro">Home</a>
+      <a href="#gallery">Photos</a>
     </nav>
   </header>
 
   <main>
     <section id="intro" class="intro-section">
       <h2>Welcome to the Temple Experience</h2>
-      <p>Temples are more than architectural masterpieces—they are the holiest places on earth where Heaven touches the hearts of God’s children. In temples, sacred ordinances are performed that bind families together for eternity and provide guidance, strength, and comfort in a world filled with uncertainty. Every detail of a temple, from its design to its purpose, points us toward Jesus Christ and His role as our Savior. Inside, we are taught eternal truths, make covenants with God, and find refuge from life’s storms. The temple is a place of revelation, healing, and renewal. It reminds us that our lives are part of something much bigger—God’s eternal plan of happiness.</p>
-      <p>President Russell M. Nelson declared, "The temple lies at the center of strengthening our faith and spiritual fortitude because the Savior and His doctrine are the very heart of the temple." As we prepare and enter the temple, we receive clarity, peace, and purpose. The ordinances performed there are not only for ourselves but also on behalf of those who have passed on, offering them the same blessings of salvation and exaltation. The temple elevates our vision beyond the mortal lens and helps us see ourselves and others through God's eyes. As we return often, we draw nearer to our divine potential and deepen our relationship with Jesus Christ, the true cornerstone of every temple.</p>
-      <p>Temples stand as beacons of light in a darkened world. No matter where they are built, they represent holiness and devotion, inviting all to come unto Christ. For many, just seeing a temple brings peace and a sense of direction. Children grow up hoping to go inside one day, and adults are reminded of the eternal promises they have made. In every way, the temple points us to a better, holier way of living—one filled with covenant keeping, personal revelation, and the power of the Atonement of Jesus Christ.</p>
-      <p>When life feels heavy, the temple lifts us. When we seek answers, the temple teaches us. And when we desire to feel close to God, the temple welcomes us with open arms. It is in the temple that we remember who we are, where we came from, and where we are going. In a world that often feels loud and confusing, the temple is a quiet, sacred place where the Spirit speaks peace to our hearts. It is a house of order, of love, and of divine truth.</p>
-      <p>
-        <a href="https://www.churchofjesuschrist.org/study/manual/childrens-songbook/i-love-to-see-the-temple?lang=eng" target="_blank">
-          🎵 I Love to See the Temple – Children's Songbook
-        </a>
-      </p>
-    </section>
-      
-      <section id="gallery" class="grid-container">
-      <figure onclick="showDetails('Salt Lake Temple', 'Completed in 1893, this iconic granite temple in Utah represents pioneer faith and sacrifice.')">
-        <img src="images/temple1.jpg" alt="Salt Lake Temple">
-        <figcaption>Salt Lake Temple</figcaption>
-      </figure>
-      <figure onclick="showDetails('São Paulo Brazil Temple', 'The first temple in South America, dedicated in 1978.')">
-        <img src="images/temple2.jpg" alt="São Paulo Brazil Temple">
-        <figcaption>São Paulo Brazil Temple</figcaption>
-      </figure>
-      <figure onclick="showDetails('Rome Italy Temple', 'Opened in 2019, this temple reflects Roman architecture and unites ancient and modern faith.')">
-        <img src="images/temple3.jpg" alt="Rome Italy Temple">
-        <figcaption>Rome Italy Temple</figcaption>
-      </figure>
-      <!-- Add more temples as needed -->
+      <p>Temples are more than architectural masterpieces—they are the holiest places on earth where Heaven touches the hearts of God’s children... (add full content here).</p>
+      <p>President Russell M. Nelson declared, "The temple lies at the center..."</p>
+      <p><a href="https://www.churchofjesuschrist.org/study/manual/childrens-songbook/i-love-to-see-the-temple?lang=eng" target="_blank">🎵 I Love to See the Temple – Church Song</a></p>
     </section>
 
-    <section id="photo-details" class="details-section hidden">
-      <h3 id="temple-title"></h3>
-      <p id="temple-description"></p>
+    <section id="gallery" class="grid-container">
+      <!-- Each image is wrapped in a figure -->
+      <figure>
+        <img src="images/temple1.jpg" alt="Salt Lake Temple" />
+        <figcaption>Salt Lake Temple – Built in 1893 in Utah, it stands as a symbol of pioneer sacrifice.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple2.jpg" alt="São Paulo Brazil Temple" />
+        <figcaption>São Paulo Temple – First LDS temple in South America, dedicated in 1978.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple3.jpg" alt="Rome Italy Temple" />
+        <figcaption>Rome Temple – Opened in 2019 and reflects Roman architecture.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple4.jpg" alt="Laie Hawaii Temple" />
+        <figcaption>Laie Hawaii Temple – First temple outside the continental U.S., dedicated in 1919.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple5.jpg" alt="Paris France Temple" />
+        <figcaption>Paris France Temple – Known for its elegant gardens and peaceful spirit.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple6.jpg" alt="Provo City Center Temple" />
+        <figcaption>Provo City Center – Restored from a burned tabernacle and rededicated in 2016.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple7.jpg" alt="Tokyo Japan Temple" />
+        <figcaption>Tokyo Temple – First temple in Asia, beautifully modern and recently renovated.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple8.jpg" alt="Mexico City Temple" />
+        <figcaption>Mexico City Temple – One of the busiest temples in Latin America.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple9.jpg" alt="Accra Ghana Temple" />
+        <figcaption>Accra Ghana Temple – First in West Africa, dedicated in 2004.</figcaption>
+      </figure>
     </section>
   </main>
 
@@ -59,3 +76,4 @@
   </footer>
 </body>
 </html>
+
