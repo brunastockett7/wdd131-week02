@@ -1,3 +1,6 @@
+/* eslint-env browser */
+/* global document */
+
 // ========== HAMBURGER MENU ==========
 const menuButton = document.getElementById('menu-button');
 const navMenu = document.getElementById('nav-menu');
@@ -10,27 +13,11 @@ if (menuButton && navMenu) {
   });
 }
 
-// ========== FOOTER: YEAR & LAST MODIFIED ==========
+// ========== FOOTER ==========
 const yearSpan = document.getElementById('year');
-const lastModifiedSpan = document.getElementById('last-modified');
+const modifiedSpan = document.getElementById('last-modified');
 
-if (yearSpan) {
+if (yearSpan && modifiedSpan) {
   yearSpan.textContent = new Date().getFullYear();
-}
-
-if (lastModifiedSpan) {
-  lastModifiedSpan.textContent = document.lastModified;
-}
-
-// ========== PHOTO DESCRIPTION INTERACTION ==========
-function showDetails(title, description) {
-  const titleElement = document.getElementById('temple-title');
-  const descElement = document.getElementById('temple-description');
-  const detailsSection = document.getElementById('photo-details');
-
-  if (titleElement && descElement && detailsSection) {
-    titleElement.textContent = title;
-    descElement.textContent = description;
-    detailsSection.classList.remove('hidden');
-  }
+  modifiedSpan.textContent = document.lastModified;
 }
