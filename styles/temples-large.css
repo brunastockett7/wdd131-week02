@@ -1,53 +1,35 @@
 @media screen and (min-width: 768px) {
-  /* Navigation switches to horizontal */
+  /* Desktop Navigation */
   nav {
     flex-direction: row;
     justify-content: center;
-    background-color: #f8e1e7;
   }
 
   nav a {
-    font-size: 1rem;
-    padding: 0.8rem 1.2rem;
-    margin: 0 0.5rem;
+    margin: 0 1rem;
   }
 
-  #menu-button {
-    display: none;
-  }
-
-  /* Wider, better intro section */
+  /* Intro Section on Large Screens */
   .intro-section {
+    font-size: 1.15rem;
+    padding: 3rem;
+    line-height: 1.8;
     max-width: 1000px;
-    font-size: 1.1rem;
-    padding: 2.5rem;
-    line-height: 1.9;
-    margin: 3rem auto;
   }
 
-  .intro-section a {
-    font-size: 0.95rem;
-  }
-
-  /* Responsive grid layout */
+  /* Grid Layout for Temple Photos */
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
+    padding: 2rem;
   }
 
   figure img {
-    max-width: 100%;
-    height: auto;
+    max-width: 400px;
   }
 
   figcaption {
     font-size: 1.05rem;
-    padding: 1.2rem;
-  }
-
-  footer {
-    font-size: 1rem;
-    padding: 2rem;
+    padding: 1rem;
   }
 }

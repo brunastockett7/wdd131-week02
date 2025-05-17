@@ -22,7 +22,7 @@ if (lastModifiedSpan) {
   lastModifiedSpan.textContent = document.lastModified;
 }
 
-// ========== INTERACTIVE TEMPLE DETAILS ==========
+// ========== PHOTO DESCRIPTION INTERACTION ==========
 function showDetails(title, description) {
   const titleElement = document.getElementById('temple-title');
   const descElement = document.getElementById('temple-description');
@@ -34,14 +34,3 @@ function showDetails(title, description) {
     detailsSection.classList.remove('hidden');
   }
 }
-
-// ========== CLOSE DETAILS WHEN CLICKING OUTSIDE ==========
-document.addEventListener('click', (e) => {
-  const details = document.getElementById('photo-details');
-  const isInsideFigure = e.target.closest('figure');
-  const isInsideDetails = e.target.closest('#photo-details');
-
-  if (details && !isInsideFigure && !isInsideDetails) {
-    details.classList.add('hidden');
-  }
-});
