@@ -27,11 +27,15 @@ header {
 /* Navigation Menu */
 nav {
   background-color: #f5eceb;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
   padding: 1rem;
+}
+
+nav.open {
+  display: flex;
 }
 
 nav a {
@@ -65,15 +69,16 @@ nav a:hover {
   margin-top: 1rem;
   text-decoration: none;
   background-color: #dba39a;
-  color: white;
+  color: #3e2723; /* Improved contrast */
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .intro-section a:hover {
   background-color: #c97f7d;
+  color: #ffffff;
 }
 
 /* Photo Gallery */
